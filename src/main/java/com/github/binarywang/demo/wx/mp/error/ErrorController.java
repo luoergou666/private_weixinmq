@@ -1,4 +1,4 @@
-package com.towdog.weixinmp.error;
+package com.github.binarywang.demo.wx.mp.error;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

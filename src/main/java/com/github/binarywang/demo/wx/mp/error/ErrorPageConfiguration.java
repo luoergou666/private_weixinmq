@@ -1,4 +1,4 @@
-package com.towdog.weixinmp.error;
+package com.github.binarywang.demo.wx.mp.error;
 
 import org.springframework.boot.web.server.ErrorPage;
 import org.springframework.boot.web.server.ErrorPageRegistrar;
