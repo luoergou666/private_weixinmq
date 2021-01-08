@@ -20,8 +20,7 @@ public class MsgHandler extends AbstractHandler {
     public WxMpXmlOutMessage handle(WxMpXmlMessage wxMessage,
                                     Map<String, Object> context, WxMpService wxMpService,
                                     WxSessionManager sessionManager) {
-        String content = "收到信息内容：" + JsonUtils.toJson(wxMessage);
-        return WechatMessageUtil.keywordReplyMsg("回复文本消息:" + content, wxMessage.getMsgType(), wxMpService, wxMessage);
+        return WechatMessageUtil.keywordReplyMsg("回复文本消息:" + wxMessage.getContent(), wxMessage.getMsgType(), wxMpService, wxMessage);
 
     }
 

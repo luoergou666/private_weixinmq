@@ -9,9 +9,9 @@ logging:
 wx:
   mp:
     configs:
-      - appId: wx7c070cbf167d9969
-        secret: 5c822dc93b097b6e2ac0e59f7106e9f3
-        token: ABC123XYZ
-        aesKey: cwoPv60NU4IcDWMKunPfVwAIhFAqSEV5w9pqKnJPObX
+      - appId:
+        secret:
+        token:
+        aesKey:
 
 
