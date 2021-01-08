@@ -22,7 +22,7 @@ import me.chanjar.weixin.mp.bean.message.WxMpXmlOutMessage;
 @Slf4j
 @AllArgsConstructor
 @RestController
-@RequestMapping("/wx_api/verification/{appid}")
+@RequestMapping("/wx_api/{appid}")
 public class WxPortalController {
     private final WxMpService wxService;
     private final WxMpMessageRouter messageRouter;

@@ -5,6 +5,7 @@ logging:
     org.springframework.web: INFO
     com.github.binarywang.demo.wx.mp: INFO
     me.chanjar.weixin: INFO
+  path: ./mqlogs
 wx:
   mp:
     configs:

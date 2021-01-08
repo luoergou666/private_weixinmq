@@ -1,5 +1,7 @@
 package com.towdog.binarywang.demo.wx.mp.config;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.towdog.binarywang.demo.wx.mp.handler.*;
 import lombok.AllArgsConstructor;
 import me.chanjar.weixin.mp.api.WxMpMessageRouter;
@@ -71,8 +73,10 @@ public class WxMpConfiguration {
         // 接收客服会话管理事件
         newRouter.rule().async(false).msgType(EVENT).event(KF_CREATE_SESSION)
                 .handler(this.kfSessionHandler).end();
+
         newRouter.rule().async(false).msgType(EVENT).event(KF_CLOSE_SESSION)
                 .handler(this.kfSessionHandler).end();
+
         newRouter.rule().async(false).msgType(EVENT).event(KF_SWITCH_SESSION)
                 .handler(this.kfSessionHandler).end();
 
@@ -106,4 +110,7 @@ public class WxMpConfiguration {
         return newRouter;
     }
 
+    public static void main(String[] args) {
+        Gson gson = new GsonBuilder().create();
+    }
 }
